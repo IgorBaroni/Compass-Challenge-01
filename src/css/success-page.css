@@ -13,7 +13,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
     color: #1E1F27;
     padding: 20px 0px;
 }
@@ -41,11 +40,17 @@ nav #right-options{
     /* flex-flow: row wrap; */
 }
 
-nav #linha{
-    margin-top: 6rem;
+#row-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#row-container #row{
     border-bottom: 2px solid #1E1F27;
     width: 88%;
-    position: absolute;
+    border-radius: 100%;
 }
 
 .heart-btn{
@@ -55,17 +60,12 @@ nav #linha{
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 16px;
-    padding: 13px 30px;
+    padding: 12px 30px;
     display: flex;
     align-items: center;
     gap: 15px;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.2s;
-}
-
-.heart-btn:hover{
-    background-color: #ff5baa;
 }
 
 main{
@@ -80,18 +80,13 @@ main{
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 16px;
-    padding: 16px 35px;
+    padding: 12px 30px;
     display: flex;
     align-items: center;
     gap: 15px;
     border-radius: 50px;
     cursor: pointer;
     margin-bottom: 30px;
-    transition: all 0.2s;
-}
-
-.back-btn:hover{
-    background-color: #54555f;
 }
 
 main section{

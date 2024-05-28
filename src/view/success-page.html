@@ -10,7 +10,7 @@
     <header>
       <nav>
         <div id="left-options">
-          <img src="../assets/images/nav-logo.png" alt="" />
+          <img src="../assets/images/navbar/nav-logo.png" alt="" />
           <p>Rescue center</p>
           <p>Apply to adopt</p>
           <p>Volunteer</p>
@@ -19,29 +19,32 @@
         </div>
 
         <div id="right-options">
-          <img src="../assets/images/icon/telephone-icon.svg" alt="" />
+          <img src="../assets/images/navbar/telephone-icon.svg" alt="" />
           <p>631-249-7325</p>
-          <button class="heart-btn">
-            <img src="../assets/images/icon/heart-icon.svg" alt="" />
+          <button class="heart-btn" id="donate-button">
+            <img src="../assets/images/buttons/heart-icon.svg" alt="" />
             <h3>Donate</h3>
           </button>
         </div>
-        <!-- Possivelmente fazer uma alteração, senão quebrará no responsivo. -->
-        <div id="linha"></div>
       </nav>
     </header>
+    <div id="row-container">
+      <!-- Possivelmente fazer uma alteração, senão quebrará no responsivo. -->
+      <div id="row"></div>
+    </div>
     <main>
-      <button class="back-btn">
-        <img src="../assets/images/icon/back-icon.svg" alt="" />
+      <button class="back-btn" id="back-btn">
+        <img src="../assets/images/buttons/back-icon.svg" alt="" />
         <h3>Back</h3>
       </button>
       <section>
         <h2>Success!</h2>
-        <p>
+        <p> <!-- Alterar texto -->
           Free your creativity and create a beautiful success page to thank your
           user for subscribing/donating to our project.
         </p>
       </section>
     </main>
+    <script src="../js/success-page.js"></script>
   </body>
 </html>
