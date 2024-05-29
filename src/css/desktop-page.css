@@ -1,1 +1,244 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Default Modal */
+.modal{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 32px;
+    width: 25%;
+    height: 80%;
+    font-family: 'Poppins';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-350%, -50%);
+}
+
+.modal h1{
+    color: #1E1F27;
+    text-align: center;
+}
+
+.modal::backdrop{
+    background-color: rgb(0 0 0 /.7)
+}
+
+.modal-body{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.modal-body label{
+    color: #FF3D9A;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.modal-body label span{
+    color: #3F96FC;
+}
+
+.modal-body input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #3F96FC;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.modal-body input[type="text"], .modal-body input[type="email"] {
+    pointer-events: none;
+}
+
+.modal-body #btn-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Donate Modal */
+.modal-body #value-input{
+    text-align: end;
+}
+
+.modal-body #payment-methods{
+    margin-top: 0.5rem;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.modal-body #payment-methods .payment-method{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    max-height: 3rem;
+    border: 1px solid #3F96FC;
+    border-radius: 5px;
+    padding: 7px 7px;
+}
+
+.modal-body #payment-methods .payment-method p{
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.selected{
+    background-color: #3F96FC;
+    color: #FFFF;
+}
+
+.help-btn{
+    background-color: #FF3D9A;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 17px;
+    padding: 13px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cancel-btn{
+    background-color: #37383F;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Adopt Modal */
+#adopt-modal p{
+    font-weight: 500;
+    text-align: center;
+}
+
+.adopt-btn{
+    width: 100%;
+    background-color: #04C27F;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.adopt-cancel-btn{
+    width: 100%;
+    background-color: #37383F;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-body #date-options{
+    margin-top: 0.5rem;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.modal-body #date-options .date-option{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    max-height: 3rem;
+    border: 1px solid #3F96FC;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.modal-body #date-options .date-option p{
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.modal-body #policy-and-terms{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body #policy-and-terms p{
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.modal-body #policy-and-terms p span{
+    color: #FF3D9A;
+    cursor: pointer;
+}
+
+.modal-body #policy-and-terms #policy-input{
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes showAnimation {
+    from {
+        transform: translate(350%, -50%) scale(0.9);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes hideAnimation {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        transform: translate(350%, -50%) scale(0.9);
+    }
+}
+
+.show {
+    animation: showAnimation 0.4s ease forwards;
+}
+
+
+.hide {
+    animation: hideAnimation 0.4s ease forwards;
+}

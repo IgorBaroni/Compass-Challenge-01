@@ -181,7 +181,7 @@
               Middleton, 2452 Wilson
             </p>
           </div>
-          <div class="info">
+          <div class="info" style="align-items: center">
             <img
               src="../assets/images/adoptables-page/footer/telephone-icon.svg"
               alt="Telephone Icon"
@@ -220,6 +220,53 @@
         We are not just a rescue, <span>we are a refuge</span>
       </h3>
     </footer>
+
+    <!-- Donate Modal -->
+    <!-- Arrumar cor dos botões -->
+    <dialog id="donate-modal" class="modal">
+      <h1>Choose your Donate</h1>
+      <div class="modal-body">
+        <label for="email">EMAIL<span>*</span></label>
+        <input
+          type="email"
+          name="email"
+          id="donate-email-input"
+          value="youremail@here"
+        />
+        <label for="value">HOW MUCH CAN YOU HELP?<span>*</span></label>
+        <input type="text" name="value" id="value-input" value="R$ 95,00" />
+        <label for="value">PAYMENT METHOD<span>*</span></label>
+        <div id="payment-methods">
+          <div class="payment-method" id="pix">
+            <p>Pix</p>
+            <input type="radio" name="payment-method" />
+          </div>
+          <div
+            class="payment-method"
+            id="credit-card"
+            style="line-height: 1.2"
+          >
+            <p>Credit Card</p>
+            <input class="payment-input" type="radio" name="payment-method" />
+          </div>
+          <div class="payment-method" id="paypal">
+            <p>Paypal</p>
+            <input type="radio" name="payment-method" />
+          </div>
+        </div>
+        <div id="btn-container">
+          <button class="help-btn" id="help-button">
+            <img src="../assets/images/buttons/heart-icon.svg" alt="" />
+            <p>I wanna Help!</p>
+          </button>
+
+          <button class="cancel-btn" id="cancel-button">
+            <img src="../assets/images/buttons/back-icon.svg" alt="" />
+            <p>Cancel</p>
+          </button>
+        </div>
+      </div>
+    </dialog>
 
     <script src="../js/adoptables-page.js"></script>
   </body>
