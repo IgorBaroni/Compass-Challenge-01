@@ -1,13 +1,17 @@
 // Donate Modal
 const donateModal = document.getElementById("donate-modal");
 
-document.getElementById("donate-button").addEventListener("click", () => {
-  donateModal.showModal();
+const donateButtons = document.querySelectorAll(".heart-btn");
 
-  document.getElementById("donate-email-input").blur();
+donateButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    donateModal.showModal();
 
-  donateModal.classList.add("show");
-  donateModal.classList.remove("hide");
+    document.getElementById("donate-email-input").blur();
+
+    donateModal.classList.add("show");
+    donateModal.classList.remove("hide");
+  });
 });
 
 document.getElementById("cancel-button").addEventListener("click", () => {
@@ -20,7 +24,7 @@ document.getElementById("cancel-button").addEventListener("click", () => {
 });
 
 document.getElementById("help-button").addEventListener("click", () => {
-  window.location = "success-page.html";
+  window.location = "src/view/success-page.html";
 });
 
 const paymentMethods = document.querySelectorAll(".payment-method");
@@ -39,7 +43,7 @@ paymentMethods.forEach((option) => {
 // Adopt Modal
 const adoptModal = document.getElementById("adopt-modal");
 
-document.getElementById("apply-button").addEventListener("click", () => {
+document.getElementById("apply-adopt-button").addEventListener("click", () => {
   adoptModal.showModal();
 
   document.getElementById("adopt-email-input").blur();
@@ -58,5 +62,5 @@ document.getElementById("adopt-cancel-button").addEventListener("click", () => {
 });
 
 document.getElementById("adopt-button").addEventListener("click", () => {
-  window.location = "success-page.html";
+  window.location = "src/view/success-page.html";
 });

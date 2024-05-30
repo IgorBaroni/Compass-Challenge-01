@@ -7,11 +7,99 @@
     <link rel="stylesheet" href="src/css/desktop-page.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <div id="left-options">
+          <img src="src/assets/images/navbar/nav-logo.png" alt="Logo" />
+          <p>Rescue center</p>
+          <p>Apply to adopt</p>
+          <p>Volunteer</p>
+          <p>Ways to give</p>
+          <p>Events</p>
+        </div>
 
-    <h1>index</h1>
+        <div id="right-options">
+          <img
+            src="src/assets/images/navbar/telephone-icon.svg"
+            alt="Telephone Icon"
+          />
+          <p>631-249-7325</p>
+          <button class="heart-btn" id="donate-button">
+            <img
+              src="src/assets/images/buttons/heart-icon.svg"
+              alt="Heart Icon"
+            />
+            <h3>Donate</h3>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div id="row-container">
+      <div id="row"></div>
+    </div>
+
+    <main>
+      <section id="section-one">
+        <div id="right-container">
+          <h2>Forever Homes Shelter</h2>
+          <p>
+            Our mission is to rescue and provide rehabilitation to dogs and cats
+            that are critically injured or neglected. We have already saved the
+            lives of 10,000 animals. We are not just a rescue, we are a refuge.
+          </p>
+          <h4>Your Gift Helps Save Lives</h4>
+          <div id="buttons">
+            <button class="heart-btn" id="donate-button-2">
+              <img
+                src="src/assets/images/buttons/heart-icon.svg"
+                alt="Heart Icon"
+              />
+              <h4>Donate</h4>
+            </button>
+
+            <button class="apply-adopt-btn" id="apply-adopt-button">
+              <img
+                src="/src/assets/images/buttons/animal-icon-2.svg"
+                alt="Animal Icon"
+              />
+              <h4>Apply to Adopt</h4>
+            </button>
+          </div>
+        </div>
+        <div id="left-container">
+          <img
+            src="src/assets/images/desktop-page/image-group.png"
+            alt="Image Group"
+          />
+        </div>
+      </section>
+
+      <section id="section-two">
+        <p>
+          With your help, we <br />
+          accomplished these goals
+        </p>
+        <div id="values-container">
+          <div class="value-card">
+            <h1>1400</h1>
+            <p>Animals Rescued</p>
+          </div>
+          <div class="value-card">
+            <h1>$1.4 Million</h1>
+            <p>Raised</p>
+          </div>
+          <div class="value-card">
+            <h1>940</h1>
+            <p>Tails Found a Home</p>
+          </div>
+        </div>
+        <div id="carrousel"><h1>carrousel</h1></div>
+      </section>
+    </main>
+
     <!-- Donate Modal -->
     <!-- Arrumar cor dos botões -->
-    <!-- <dialog id="donate-modal" class="modal">
+    <dialog id="donate-modal" class="modal">
       <h1>Choose your Donate</h1>
       <div class="modal-body">
         <label for="email">EMAIL<span>*</span></label>
@@ -40,20 +128,26 @@
         </div>
         <div id="btn-container">
           <button class="help-btn" id="help-button">
-            <img src="../assets/images/buttons/heart-icon.svg" alt="" />
+            <img
+              src="src/assets/images/buttons/heart-icon.svg"
+              alt="Heart Icon"
+            />
             <p>I wanna Help!</p>
           </button>
 
           <button class="cancel-btn" id="cancel-button">
-            <img src="../assets/images/buttons/back-icon.svg" alt="" />
+            <img
+              src="src/assets/images/buttons/back-icon.svg"
+              alt="Back Arrow Icon"
+            />
             <p>Cancel</p>
           </button>
         </div>
       </div>
-    </dialog> -->
+    </dialog>
 
     <!-- Adopt Modal -->
-    <!-- <dialog id="adopt-modal" class="modal">
+    <dialog id="adopt-modal" class="modal">
       <h1>Apply to Adopt</h1>
       <p>Complete the blanks with your information</p>
       <div class="modal-body">
@@ -90,24 +184,36 @@
         <div id="policy-and-terms">
           <input type="checkbox" id="policy-input" />
           <p>
-            I agree with <span>Privacy Policy</span> and
-            <span>Terms of Conditions</span>
+            I agree with
+            <a href="https://google.com" target="_blank" class="terms-link"
+              >Privacy Policy</a
+            >
+            and
+            <a href="https://google.com" target="_blank" class="terms-link"
+              >Terms of Conditions</a
+            >
           </p>
         </div>
 
         <div id="btn-container">
           <button class="adopt-btn" id="adopt-button">
-            <img src="/src/assets/images/buttons/animal-icon.svg" alt="" />
+            <img
+              src="/src/assets/images/buttons/animal-icon.svg"
+              alt="Animal Icon"
+            />
             <p>I wanna Adopt!</p>
           </button>
 
           <button class="adopt-cancel-btn" id="adopt-cancel-button">
-            <img src="/src/assets/images/buttons/back-icon.svg" alt="" />
+            <img
+              src="/src/assets/images/buttons/back-icon.svg"
+              alt="Back Arrow Icon"
+            />
             <p>Cancel</p>
           </button>
         </div>
       </div>
-    </dialog> -->
+    </dialog>
 
     <script src="src/js/desktop-page.js"></script>
   </body>
