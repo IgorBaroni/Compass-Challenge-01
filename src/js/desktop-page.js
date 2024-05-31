@@ -24,19 +24,24 @@ document.getElementById("cancel-button").addEventListener("click", () => {
 });
 
 document.getElementById("help-button").addEventListener("click", () => {
-  window.location = "src/view/success-page.html";
+  window.location = "src/view/success-page.html?action=donation";
 });
 
 const paymentMethods = document.querySelectorAll(".payment-method");
+const paymentInputs = document.querySelectorAll(".payment-input");
 
-paymentMethods[0].classList.add("selected");
-
-paymentMethods.forEach((option) => {
+paymentMethods.forEach((option, index) => {
   option.addEventListener("click", () => {
     for (let i = 0; i < paymentMethods.length; i++) {
       paymentMethods[i].classList.remove("selected");
     }
     option.classList.add("selected");
+
+    for (let i = 0; i < paymentInputs.length; i++) {
+      paymentInputs[i].checked = false;
+    }
+
+    paymentInputs[index].checked = true;
   });
 });
 
@@ -62,5 +67,5 @@ document.getElementById("adopt-cancel-button").addEventListener("click", () => {
 });
 
 document.getElementById("adopt-button").addEventListener("click", () => {
-  window.location = "src/view/success-page.html";
+  window.location = "src/view/success-page.html?action=adoption";
 });

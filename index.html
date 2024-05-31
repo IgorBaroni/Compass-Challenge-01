@@ -54,7 +54,7 @@
                 src="src/assets/images/buttons/heart-icon.svg"
                 alt="Heart Icon"
               />
-              <h4>Donate</h4>
+              <h4 style="font-size: 18px">Donate</h4>
             </button>
 
             <button class="apply-adopt-btn" id="apply-adopt-button">
@@ -98,7 +98,6 @@
     </main>
 
     <!-- Donate Modal -->
-    <!-- Arrumar cor dos botões -->
     <dialog id="donate-modal" class="modal">
       <h1>Choose your Donate</h1>
       <div class="modal-body">
@@ -114,16 +113,33 @@
         <label for="value">PAYMENT METHOD<span>*</span></label>
         <div id="payment-methods">
           <div class="payment-method" id="pix">
-            <p>Pix</p>
-            <input type="radio" name="payment-method" />
+            <span class="radio-text">
+              <p>Pix</p>
+            </span>
+            <div class="radio-container">
+              <input type="radio" name="payment-method" class="payment-input" />
+              <div class="radio-button"></div>
+            </div>
           </div>
-          <div class="payment-method" id="credit-card" style="line-height: 1.2">
-            <p>Credit Card</p>
-            <input class="payment-input" type="radio" name="payment-method" />
+
+          <div class="payment-method" id="credit-card">
+            <span class="radio-text">
+              <p style="line-height: 1.2">Credit Card</p>
+            </span>
+            <div class="radio-container">
+              <input type="radio" name="payment-method" class="payment-input" />
+              <div class="radio-button"></div>
+            </div>
           </div>
+
           <div class="payment-method" id="paypal">
-            <p>Paypal</p>
-            <input type="radio" name="payment-method" />
+            <span class="radio-text">
+              <p>Paypal</p>
+            </span>
+            <div class="radio-container">
+              <input type="radio" name="payment-method" class="payment-input" />
+              <div class="radio-button"></div>
+            </div>
           </div>
         </div>
         <div id="btn-container">
@@ -182,17 +198,24 @@
         </div>
 
         <div id="policy-and-terms">
-          <input type="checkbox" id="policy-input" />
-          <p>
-            I agree with
-            <a href="https://google.com" target="_blank" class="terms-link"
-              >Privacy Policy</a
-            >
-            and
-            <a href="https://google.com" target="_blank" class="terms-link"
-              >Terms of Conditions</a
-            >
-          </p>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label">
+              <div class="checkbox-custom"></div>
+            </label>
+            <span class="checkbox-text">
+              <p>
+                I agree with
+                <a href="https://google.com" target="_blank" class="terms-link"
+                  >Privacy Policy</a
+                >
+                and
+                <a href="https://google.com" target="_blank" class="terms-link"
+                  >Terms of Conditions</a
+                >
+              </p>
+            </span>
+          </div>
         </div>
 
         <div id="btn-container">
