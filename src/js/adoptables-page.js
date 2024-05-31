@@ -34,7 +34,6 @@ const paymentInputs = document.querySelectorAll(".payment-input");
 paymentMethods[0].classList.add("selected");
 paymentInputs[0].checked = true;
 
-
 paymentMethods.forEach((option, index) => {
   option.addEventListener("click", () => {
     for (let i = 0; i < paymentMethods.length; i++) {

@@ -7,6 +7,13 @@ viewAdoptablesButtons.forEach((button) => {
   });
 });
 
+// Success Page Route
+const subscribeButton = document.getElementById("subscribe-btn");
+
+subscribeButton.addEventListener("click", () => {
+  window.location = "src/view/success-page.html?action=subscription";
+});
+
 // Donate Modal
 const donateModal = document.getElementById("donate-modal");
 

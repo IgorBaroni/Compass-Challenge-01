@@ -403,7 +403,7 @@ main #section-six .section-title {
 }
 
 main #section-six .section-title span {
-  color: #F8DB46;
+  color: #f8db46;
 }
 
 main #section-six .section-main {
@@ -432,10 +432,10 @@ main #section-six .section-main .buttons {
   align-items: center;
 }
 
-main #section-six .section-main .buttons .view-adop-btn{
+main #section-six .section-main .buttons .view-adop-btn {
   border: none;
-  background-color: #F8DB46;
-  color: #1E1F27;
+  background-color: #f8db46;
+  color: #1e1f27;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
@@ -444,9 +444,9 @@ main #section-six .section-main .buttons .view-adop-btn{
   cursor: pointer;
 }
 
-main #section-six .section-main .buttons .apply-adopt-btn{
-  border: 2px solid #FFF;
-  color: #FFFFFF;
+main #section-six .section-main .buttons .apply-adopt-btn {
+  border: 2px solid #fff;
+  color: #ffffff;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
@@ -455,70 +455,168 @@ main #section-six .section-main .buttons .apply-adopt-btn{
   background-color: transparent;
 }
 
-main #section-seven{
-  background-color: #5758F1;
+main #section-seven {
+  background-color: #5758f1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  height: 65vh;
 }
 
-main #section-seven .section-title{
+main #section-seven .section-title {
+  margin-top: 50px;
   color: #ffffff;
   font-size: 50px;
   text-align: center;
   font-weight: 700;
 }
 
-main #section-seven .section-description{
+main #section-seven .section-description {
   color: #ffffff;
   font-size: 18px;
   text-align: center;
   font-weight: 300;
-  font-family: 'Inter';
+  font-family: "Inter";
   line-height: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-main #section-seven .section-main{
+main #section-seven .section-main {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 100px;
 }
 
-main #section-seven .subscribe-input{
+main #section-seven .subscribe-input {
   background-color: transparent;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 30px;
   padding: 16px 145px 16px 20px;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
 }
 
 main #section-seven .subscribe-input::placeholder {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 300;
   font-size: 16px;
-  color: #FFFFFF80
+  color: #ffffff80;
 }
 
 main #section-seven .subscribe-btn {
   border: none;
-  color: #1E1F27;
+  color: #1e1f27;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
   padding: 15px 30px;
   border-radius: 100px;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
 }
 
+footer {
+  height: 58vh;
+  margin: 30px 50px;
+}
 
+footer #information-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
 
+footer #information-container #company-figures-container {
+  font-family: "Poppins";
+  display: flex;
+  width: 12%;
+  flex-direction: column;
+  gap: 3px;
+  color: #1e1f27;
+}
+
+footer #information-container #company-figures-container #logo {
+  max-width: 60%;
+  margin-bottom: 5%;
+}
+
+footer #information-container #company-figures-container h2 {
+  line-height: 110%;
+}
+
+footer #information-container #company-figures-container h2 > img {
+  height: 35%;
+}
+
+footer #information-container #company-figures-container p {
+  font-weight: 700;
+}
+
+footer #information-container .options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: #1e1f27;
+}
+
+footer #information-container #third-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: #1e1f27;
+}
+
+footer #information-container #third-options-container .info {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+footer #information-container #third-options-container img {
+  height: 16px;
+}
+
+footer #information-container #third-options-container #social-links {
+  display: flex;
+  gap: 20px;
+}
+
+footer #information-container #third-options-container #social-links img {
+  height: 21px;
+}
+
+footer #row-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+footer #row-container #row {
+  border-bottom: 2px solid #1e1f27;
+  width: 81.4%;
+  border-radius: 100%;
+}
+
+footer #bottom-title {
+  font-family: "Inter";
+  font-size: 23px;
+  text-align: center;
+  margin: 50px 0px;
+  color: #1e1f27;
+  font-weight: 900;
+}
+
+footer #bottom-title span {
+  color: #ff3d9a;
+}
 
 /* Default Modal */
 .modal {
