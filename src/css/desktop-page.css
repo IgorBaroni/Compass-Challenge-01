@@ -68,36 +68,36 @@ main #section-one {
   margin-bottom: 40px;
 }
 
-main #section-one #right-container {
+main #section-one #left-container {
   width: 35%;
   margin-left: 10px;
 }
 
-main #section-one #right-container h2 {
+main #section-one #left-container h2 {
   font-size: 3rem;
   color: #1e1f27;
   margin-bottom: 15px;
   line-height: 60px;
 }
 
-main #section-one #right-container p {
+main #section-one #left-container p {
   color: #37383f;
   font-weight: 500;
 }
 
-main #section-one #right-container > h4 {
+main #section-one #left-container > h4 {
   font-size: 24px;
   color: #1e1f27;
   margin-top: 25px;
   margin-bottom: 20px;
 }
 
-main #section-one #right-container #buttons {
+main #section-one #left-container #buttons {
   display: flex;
   gap: 15px;
 }
 
-main #section-one #left-container {
+main #section-one #right-container {
   margin-right: 40px;
 }
 
@@ -130,7 +130,7 @@ main #section-one #left-container {
   cursor: pointer;
 }
 
-main #section-one #left-container > img {
+main #section-one #right-container > img {
   height: 75vh;
 }
 
