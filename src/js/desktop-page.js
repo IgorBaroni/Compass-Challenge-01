@@ -48,13 +48,17 @@ paymentMethods.forEach((option, index) => {
 // Adopt Modal
 const adoptModal = document.getElementById("adopt-modal");
 
-document.getElementById("apply-adopt-button").addEventListener("click", () => {
-  adoptModal.showModal();
+const adoptButtons = document.querySelectorAll(".apply-adopt-btn");
 
-  document.getElementById("adopt-email-input").blur();
+adoptButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    adoptModal.showModal();
 
-  adoptModal.classList.add("show");
-  adoptModal.classList.remove("hide");
+    document.getElementById("adopt-email-input").blur();
+
+    adoptModal.classList.add("show");
+    adoptModal.classList.remove("hide");
+  });
 });
 
 document.getElementById("adopt-cancel-button").addEventListener("click", () => {

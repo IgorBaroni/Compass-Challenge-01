@@ -219,8 +219,72 @@ main #section-three #cards .card .card-title{
 
 main #section-three #cards .card .card-description{
   color: #FFFFFFCC;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: 'Inter';
+  line-height: 25px;
 }
+
+main #section-four {
+  padding: 20px 70px;
+}
+
+main #section-four .section-title {
+  margin: 50px 0px;
+  font-size: 40px;
+  color: #1e1f27;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+main #section-four #main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #section-four #left-container > img {
+  height: 75vh;
+  margin-right: 40px;
+}
+
+main #section-four #right-container{
+  display: flex;  
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  width: 28vw;
+}
+
+main #section-four #right-container .container-title{
+  font-size: 25px;
+  color: #1e1f27;
+  font-weight: 700;
+  text-align: center;
+}
+
+main #section-four #right-container .container-list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #37383F;
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+main #section-four #right-container .apply-adopt-btn{
+  background-color: #1E1F27;
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
 
 /* Default Modal */
 .modal {
