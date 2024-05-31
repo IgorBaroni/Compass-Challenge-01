@@ -121,6 +121,7 @@ main p {
   font-weight: 500;
   color: #37383f;
   font-size: 18px;
+  text-align: justify;
 }
 
 /* Default Modal */

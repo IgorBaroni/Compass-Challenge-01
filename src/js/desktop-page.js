@@ -1,3 +1,12 @@
+// Adoptables Page Route
+const viewAdoptablesButtons = document.querySelectorAll(".view-adop-btn");
+
+viewAdoptablesButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    window.location = "src/view/adoptables-page.html";
+  });
+});
+
 // Donate Modal
 const donateModal = document.getElementById("donate-modal");
 

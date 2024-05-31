@@ -83,6 +83,7 @@ main #section-one #left-container h2 {
 main #section-one #left-container p {
   color: #37383f;
   font-weight: 500;
+  text-align: justify;
 }
 
 main #section-one #left-container > h4 {
@@ -170,7 +171,7 @@ main #section-two .value-card p {
   font-size: 20px;
 }
 
-main #section-three{
+main #section-three {
   background-color: #1e1f27;
   display: flex;
   justify-content: center;
@@ -187,7 +188,7 @@ main #section-three .section-title {
   font-weight: 700;
 }
 
-main #section-three #cards{
+main #section-three #cards {
   display: flex;
   justify-content: space-around;
   width: 80vw;
@@ -195,14 +196,14 @@ main #section-three #cards{
   gap: 50px;
 }
 
-main #section-three #cards .card{
+main #section-three #cards .card {
   border: 2px solid #fff;
   width: 23vw;
   padding: 15px 30px;
   border-radius: 20px;
 }
 
-main #section-three #cards .card .card-header{
+main #section-three #cards .card .card-header {
   margin: 10px 0px;
   display: flex;
   align-items: baseline;
@@ -210,17 +211,17 @@ main #section-three #cards .card .card-header{
   margin-bottom: 30px;
 }
 
-main #section-three #cards .card .card-title{
-  color: #FFF;
+main #section-three #cards .card .card-title {
+  color: #fff;
   font-size: 30px;
   line-height: 10px;
   font-weight: 600;
 }
 
-main #section-three #cards .card .card-description{
-  color: #FFFFFFCC;
+main #section-three #cards .card .card-description {
+  color: #ffffffcc;
   font-weight: 300;
-  font-family: 'Inter';
+  font-family: "Inter";
   line-height: 25px;
 }
 
@@ -248,8 +249,8 @@ main #section-four #left-container > img {
   margin-right: 40px;
 }
 
-main #section-four #right-container{
-  display: flex;  
+main #section-four #right-container {
+  display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
@@ -257,26 +258,26 @@ main #section-four #right-container{
   width: 28vw;
 }
 
-main #section-four #right-container .container-title{
+main #section-four #right-container .container-title {
   font-size: 28px;
   color: #1e1f27;
   font-weight: 700;
   text-align: center;
 }
 
-main #section-four #right-container .container-list{
+main #section-four #right-container .container-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #37383F;
-  font-family: 'Inter';
+  color: #37383f;
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
 }
 
-main #section-four #right-container .apply-adopt-btn{
-  background-color: #1E1F27;
-  color: #FFFFFF;
+main #section-four #right-container .apply-adopt-btn {
+  background-color: #1e1f27;
+  color: #ffffff;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 600;
@@ -286,6 +287,95 @@ main #section-four #right-container .apply-adopt-btn{
   margin-top: 5px;
 }
 
+main #section-five {
+  background-color: #1e1f27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 95vh;
+}
+
+main #section-five .section-header {
+  display: flex;
+  width: 85vw;
+  justify-content: space-around;
+}
+
+main #section-five .section-title {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+main #section-five #cards {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+main #section-five #cards .card {
+  border: 2px solid #fff;
+  width: 18vw;
+  height: 48vh;
+  padding: 15px 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main #section-five #cards .card .card-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+main #section-five #cards .card .card-description {
+  color: #ffffffcc;
+  font-weight: 300;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+
+main #section-five #cards .card .card-btn {
+  border: none;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+main #section-five #cards .card .card-btn1 {
+  background-color: #04c27f;
+  color: #1e1f27;
+  cursor: pointer;
+}
+
+main #section-five #cards .card .card-btn2 {
+  background-color: #f1d06e;
+  color: #1e1f27;
+}
+
+main #section-five #cards .card .card-btn3 {
+  background-color: #ff3d9a;
+  color: #fff;
+}
+
+main #section-five #cards .card .card-btn4 {
+  background-color: #5758f1;
+  color: #fff;
+}
 
 /* Default Modal */
 .modal {
