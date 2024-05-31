@@ -170,6 +170,58 @@ main #section-two .value-card p {
   font-size: 20px;
 }
 
+main #section-three{
+  background-color: #1e1f27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 140vh;
+}
+
+main #section-three .section-title {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+main #section-three #cards{
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  flex-flow: row wrap;
+  gap: 50px;
+}
+
+main #section-three #cards .card{
+  border: 2px solid #fff;
+  width: 23vw;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+
+main #section-three #cards .card .card-header{
+  margin: 10px 0px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+main #section-three #cards .card .card-title{
+  color: #FFF;
+  font-size: 30px;
+  line-height: 10px;
+  font-weight: 600;
+}
+
+main #section-three #cards .card .card-description{
+  color: #FFFFFFCC;
+  font-weight: 400;
+}
+
 /* Default Modal */
 .modal {
   border: none;
