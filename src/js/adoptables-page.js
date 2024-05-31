@@ -31,6 +31,10 @@ document.getElementById("help-button").addEventListener("click", () => {
 const paymentMethods = document.querySelectorAll(".payment-method");
 const paymentInputs = document.querySelectorAll(".payment-input");
 
+paymentMethods[0].classList.add("selected");
+paymentInputs[0].checked = true;
+
+
 paymentMethods.forEach((option, index) => {
   option.addEventListener("click", () => {
     for (let i = 0; i < paymentMethods.length; i++) {
@@ -39,9 +43,9 @@ paymentMethods.forEach((option, index) => {
     option.classList.add("selected");
 
     for (let i = 0; i < paymentInputs.length; i++) {
-      paymentInputs[i].checked = false; 
+      paymentInputs[i].checked = false;
     }
-    
-    paymentInputs[index].checked = true; 
+
+    paymentInputs[index].checked = true;
   });
 });

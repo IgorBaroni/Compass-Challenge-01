@@ -131,7 +131,7 @@ main #section-one #right-container {
 }
 
 main #section-one #right-container > img {
-  height: 75vh;
+  height: 70vh;
 }
 
 main #section-two {
@@ -244,7 +244,7 @@ main #section-four #main-container {
 }
 
 main #section-four #left-container > img {
-  height: 75vh;
+  height: 70vh;
   margin-right: 40px;
 }
 
@@ -258,7 +258,7 @@ main #section-four #right-container{
 }
 
 main #section-four #right-container .container-title{
-  font-size: 25px;
+  font-size: 28px;
   color: #1e1f27;
   font-weight: 700;
   text-align: center;
@@ -267,17 +267,18 @@ main #section-four #right-container .container-title{
 main #section-four #right-container .container-list{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   color: #37383F;
   font-family: 'Inter';
   font-weight: 500;
+  font-size: 18px;
 }
 
 main #section-four #right-container .apply-adopt-btn{
   background-color: #1E1F27;
   color: #FFFFFF;
   font-family: "Poppins";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 12px 25px;
   border-radius: 50px;
