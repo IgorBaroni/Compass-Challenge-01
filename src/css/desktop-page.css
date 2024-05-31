@@ -455,6 +455,69 @@ main #section-six .section-main .buttons .apply-adopt-btn{
   background-color: transparent;
 }
 
+main #section-seven{
+  background-color: #5758F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 65vh;
+}
+
+main #section-seven .section-title{
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+main #section-seven .section-description{
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Inter';
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+main #section-seven .section-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+main #section-seven .subscribe-input{
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  padding: 16px 145px 16px 20px;
+  color: #FFF;
+  font-size: 16px;
+}
+
+main #section-seven .subscribe-input::placeholder {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFFFF80
+}
+
+main #section-seven .subscribe-btn {
+  border: none;
+  color: #1E1F27;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 100px;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+
 
 
 /* Default Modal */
