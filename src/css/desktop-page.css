@@ -294,7 +294,7 @@ main #section-five {
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  height: 95vh;
+  height: 100vh;
 }
 
 main #section-five .section-header {
@@ -315,6 +315,7 @@ main #section-five #cards {
   justify-content: space-around;
   flex-flow: row wrap;
   gap: 30px;
+  margin-bottom: 50px;
 }
 
 main #section-five #cards .card {
@@ -376,6 +377,85 @@ main #section-five #cards .card .card-btn4 {
   background-color: #5758f1;
   color: #fff;
 }
+
+main #section-six {
+  background-color: #1e1f27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main #section-six .section-header {
+  display: flex;
+  width: 85vw;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+main #section-six .section-title {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+main #section-six .section-title span {
+  color: #F8DB46;
+}
+
+main #section-six .section-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 95px;
+}
+
+main #section-six .section-main .section-main-body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+main #section-six .section-main .description {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+main #section-six .section-main .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main #section-six .section-main .buttons .view-adop-btn{
+  border: none;
+  background-color: #F8DB46;
+  color: #1E1F27;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+main #section-six .section-main .buttons .apply-adopt-btn{
+  border: 2px solid #FFF;
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 100px;
+  background-color: transparent;
+}
+
+
 
 /* Default Modal */
 .modal {
