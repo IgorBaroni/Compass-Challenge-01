@@ -117,10 +117,10 @@ main h2 {
   margin-bottom: 15px;
 }
 
-main a {
+main p {
   font-weight: 500;
   color: #37383f;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Default Modal */
