@@ -14,6 +14,43 @@ subscribeButton.addEventListener("click", () => {
   window.location = "src/view/success-page.html?action=subscription";
 });
 
+// Carousel
+const rightArrow = document.getElementById("arrow-right");
+const leftArrow = document.getElementById("arrow-left");
+let counter = 1;
+
+// Carousel Dots
+const dots = document.querySelectorAll(".dot");
+
+dots[0].classList.add("dot-selected");
+
+function changeDotColor(){
+  // Remove color from all dots
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("dot-selected");
+  }
+  // Add color to new dot dot
+  dots[counter-1].classList.add("dot-selected");
+}
+
+rightArrow.addEventListener("click", () => {
+  if (counter < 5) {
+    counter++;
+  } else if (counter = 6) {
+    counter = counter = 1;
+  }
+  changeDotColor()
+});
+
+leftArrow.addEventListener("click", () => {
+  if (counter > 1) {
+    counter--;
+  } else if (counter = 1) {
+    counter = 5;
+  }
+  changeDotColor()
+});
+
 // Donate Modal
 const donateModal = document.getElementById("donate-modal");
 
