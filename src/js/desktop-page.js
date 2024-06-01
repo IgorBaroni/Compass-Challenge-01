@@ -18,37 +18,66 @@ subscribeButton.addEventListener("click", () => {
 const rightArrow = document.getElementById("arrow-right");
 const leftArrow = document.getElementById("arrow-left");
 let counter = 1;
+let imgNumber = 1;
+let imgNumber2 = 1;
 
 // Carousel Dots
 const dots = document.querySelectorAll(".dot");
 
 dots[0].classList.add("dot-selected");
 
-function changeDotColor(){
+function changeDotColor() {
   // Remove color from all dots
   for (let i = 0; i < dots.length; i++) {
     dots[i].classList.remove("dot-selected");
   }
-  // Add color to new dot dot
-  dots[counter-1].classList.add("dot-selected");
+  // Add color to new dot
+  dots[counter - 1].classList.add("dot-selected");
 }
 
+function addImage() {
+  let carouselImages = document.querySelectorAll(".carousel-image");
+  imgNumber++;
+  carouselImages.forEach((image, index) => {
+   if ((imgNumber >= 6)) {
+      imgNumber = 1;
+    }
+
+    if(imgNumber+index >= 6){
+      // index = 0;
+    }
+    image.src = `src/assets/images/desktop-page/carousel/img-${imgNumber+index}.png`;
+  });
+}
+
+// function removeImage() {
+//   let carouselImages = document.querySelectorAll(".carousel-image");
+
+//   carouselImages.forEach((image) => {
+//     i--;
+//     image.src = `src/assets/images/desktop-page/carousel/img-${i}.png`;
+//   });
+// }
+
 rightArrow.addEventListener("click", () => {
+  // Changing counter value
   if (counter < 5) {
     counter++;
-  } else if (counter = 6) {
-    counter = counter = 1;
+  } else if ((counter = 6)) {
+    counter = 1;
   }
-  changeDotColor()
+  addImage();
+  changeDotColor();
 });
 
 leftArrow.addEventListener("click", () => {
   if (counter > 1) {
     counter--;
-  } else if (counter = 1) {
+  } else if ((counter = 1)) {
     counter = 5;
   }
-  changeDotColor()
+  changeDotColor();
+  // removeImage();
 });
 
 // Donate Modal
