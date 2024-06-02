@@ -17,9 +17,8 @@ subscribeButton.addEventListener("click", () => {
 // Carousel
 const rightArrow = document.getElementById("arrow-right");
 const leftArrow = document.getElementById("arrow-left");
+let carouselImages = document.querySelectorAll(".carousel-image");
 let counter = 1;
-let imgNumber = 1;
-let imgNumber2 = 1;
 
 // Carousel Dots
 const dots = document.querySelectorAll(".dot");
@@ -35,29 +34,52 @@ function changeDotColor() {
   dots[counter - 1].classList.add("dot-selected");
 }
 
+let imgNumber = 1;
+let result;
 function addImage() {
-  let carouselImages = document.querySelectorAll(".carousel-image");
   imgNumber++;
   carouselImages.forEach((image, index) => {
-   if ((imgNumber >= 6)) {
+    if (imgNumber == 6) {
       imgNumber = 1;
     }
 
-    if(imgNumber+index >= 6){
-      // index = 0;
+    result = imgNumber + index;
+
+    if (result == 6) {
+      result = 1;
+    } else if (result == 7) {
+      result = 2;
+    } else if (result == 8) {
+      result = 3;
     }
-    image.src = `src/assets/images/desktop-page/carousel/img-${imgNumber+index}.png`;
+    image.src = `src/assets/images/desktop-page/carousel/img-${result}.png`;
   });
 }
 
-// function removeImage() {
-//   let carouselImages = document.querySelectorAll(".carousel-image");
+let result2;
+let imgNumber2 = 6;
+function removeImage() {
+  imgNumber2--;
+  carouselImages.forEach((image, index) => {
+    if (imgNumber2 == 0) {
+      imgNumber2 = 5;
+    }
 
-//   carouselImages.forEach((image) => {
-//     i--;
-//     image.src = `src/assets/images/desktop-page/carousel/img-${i}.png`;
-//   });
-// }
+    result2 = imgNumber2 + index;
+
+    if (result2 == 6) {
+      result2 = 1;
+    } else if (result2 == 7) {
+      result2 = 2;
+    } else if (result2 == 8) {
+      result2 = 3;
+    }
+
+    console.log(result2);
+
+    image.src = `src/assets/images/desktop-page/carousel/img-${result2}.png`;
+  });
+}
 
 rightArrow.addEventListener("click", () => {
   // Changing counter value
@@ -71,13 +93,14 @@ rightArrow.addEventListener("click", () => {
 });
 
 leftArrow.addEventListener("click", () => {
+  // Changing counter value
   if (counter > 1) {
     counter--;
   } else if ((counter = 1)) {
     counter = 5;
   }
+  removeImage();
   changeDotColor();
-  // removeImage();
 });
 
 // Donate Modal
