@@ -152,7 +152,7 @@ main #section-two p {
   font-weight: 700;
 }
 
-main #section-two .section-title{
+main #section-two .section-title {
   margin-top: 70px;
   margin-bottom: 30px;
 }
@@ -177,7 +177,7 @@ main #section-two .value-card p {
   font-size: 20px;
 }
 
-main #section-two #carousel-container{
+main #section-two #carousel-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,7 +185,7 @@ main #section-two #carousel-container{
   width: 50vw;
 }
 
-main #section-two #carousel{
+main #section-two #carousel {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
@@ -193,37 +193,40 @@ main #section-two #carousel{
   margin-bottom: 70px;
 }
 
-main #section-two #carousel>img{
+main #section-two #carousel > img {
   cursor: pointer;
 }
 
-main #section-two #carousel-container #carousel-body{
+main #section-two #carousel-container #carousel-body {
   display: flex;
   gap: 30px;
 }
 
-main #section-two #carousel-container #carousel-body>img{
+main #section-two #carousel-container #carousel-body > img {
   height: 30vh;
 }
 
-main #section-two #carousel-container #dots{
+main #section-two #carousel-container #carousel-body > img.changePicture {
+  animation: opacityAnimation 1s ease;
+}
+
+main #section-two #carousel-container #dots {
   display: flex;
   justify-content: space-around;
   width: 10vw;
   margin-bottom: 70px;
 }
 
-
-main #section-two #carousel-container #dots .dot{
-  background-color: #FFFFFF33;
+main #section-two #carousel-container #dots .dot {
+  background-color: #ffffff33;
   height: 12px;
   width: 12px;
   border-radius: 100%;
 }
 
-main #section-two #carousel-container #dots .dot-selected{
-  background-color: #FFFFFF;
-  animation: dotOpacity 0.3s ease;
+main #section-two #carousel-container #dots .dot-selected {
+  background-color: #ffffff;
+  animation: opacityAnimation 0.3s ease;
   opacity: 1;
 }
 
@@ -1000,11 +1003,11 @@ footer #bottom-title span {
   }
 }
 
-@keyframes dotOpacity{
-  from{
+@keyframes opacityAnimation {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }

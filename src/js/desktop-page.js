@@ -52,20 +52,25 @@ function addImage() {
     } else if (result == 8) {
       result = 3;
     }
+
     image.src = `src/assets/images/desktop-page/carousel/img-${result}.png`;
+
+    image.classList.remove("changePicture");
+    setTimeout(() => {
+      image.classList.add("changePicture");
+    }, 0);
   });
 }
 
 let result2;
-let imgNumber2 = 6;
 function removeImage() {
-  imgNumber2--;
+  imgNumber--;
   carouselImages.forEach((image, index) => {
-    if (imgNumber2 == 0) {
-      imgNumber2 = 5;
+    if (imgNumber == 0) {
+      imgNumber = 5;
     }
 
-    result2 = imgNumber2 + index;
+    result2 = imgNumber + index;
 
     if (result2 == 6) {
       result2 = 1;
@@ -74,10 +79,12 @@ function removeImage() {
     } else if (result2 == 8) {
       result2 = 3;
     }
-
-    console.log(result2);
-
     image.src = `src/assets/images/desktop-page/carousel/img-${result2}.png`;
+
+    image.classList.remove("changePicture");
+    setTimeout(() => {
+      image.classList.add("changePicture");
+    }, 0);
   });
 }
 
