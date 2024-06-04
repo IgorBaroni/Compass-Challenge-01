@@ -1,5 +1,7 @@
 # Compass-Challenge-01
-Primeiro desafio do programa de estágio Front-End com React e AWS da Compass.uol.
+Primeiro desafio do programa de estágio Front-End com React e AWS da Compass.uol.<br>
+Que teve seu período de execução em 27/05 a 04/06.
+Onde o objetivo principal foi aplicar tudo o que foi aprendido até então, e demonstrar suas habilidades.
 
 ## Sobre o desafio
 O desafio foi o desenvolvimento de um site de uma empresa fictícia chamada de 'Rescue Center'. 
