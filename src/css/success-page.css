@@ -173,11 +173,6 @@ main p {
   font-weight: 500;
 }
 
-.modal-body input[type="text"],
-.modal-body input[type="email"] {
-  pointer-events: none;
-}
-
 .modal-body #btn-container {
   display: flex;
   justify-content: center;

@@ -115,11 +115,12 @@ const donateModal = document.getElementById("donate-modal");
 
 const donateButtons = document.querySelectorAll(".heart-btn");
 
+const valueInput = document.getElementById("value-input");
+const emailInput = document.getElementById("donate-email-input");
+
 donateButtons.forEach((button) => {
   button.addEventListener("click", () => {
     donateModal.showModal();
-
-    document.getElementById("donate-email-input").blur();
 
     donateModal.classList.add("show");
     donateModal.classList.remove("hide");
@@ -135,8 +136,19 @@ document.getElementById("cancel-button").addEventListener("click", () => {
   }, 250);
 });
 
+valueInput.addEventListener("change", () => {
+  valueInput.value = "R$ " + parseFloat(valueInput.value).toFixed(2);
+});
+
+const validateEmail = /\w+@\w+\.\w+/
+const validateValue = /\d+/
+
 document.getElementById("help-button").addEventListener("click", () => {
-  window.location = "src/view/success-page.html?action=donation";
+  if (validateValue.test(valueInput.value) && validateEmail.test(emailInput.value)) {
+    window.location = "src/view/success-page.html?action=donation";
+  } else {
+    alert("Fill in all the blanks with valid information!");
+  } 
 });
 
 const paymentMethods = document.querySelectorAll(".payment-method");
