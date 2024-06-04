@@ -19,7 +19,7 @@ A Desktop Page é a página inicial, onde está todas as informações sobre a e
 A Adoptables Page visa mostrar ao usuário os animais que estão disponíveis para adoção, trazendo uma imagem e o nome dos mesmos.
 
 ### Success Page
-A Success Page é a página que mostra ao usuário uma mensagem de sucesso juntamente com uma imagem. Ela é aberta quando alguma ação do usuário dá certo, como por exemplo quando o usuário informa dados válidos em um algum dosmodais do site.
+A Success Page é a página que mostra ao usuário uma mensagem de sucesso juntamente com uma imagem. Ela é aberta quando alguma ação do usuário dá certo, como por exemplo quando o usuário informa dados válidos em um algum modal do site.
 
 ## Tecnologias
 As tecnologias utilizadas foram HTML, CSS e JS.
