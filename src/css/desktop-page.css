@@ -556,7 +556,8 @@ main #section-seven .subscribe-input {
   padding: 16px 145px 16px 20px;
   color: #fff;
   font-size: 16px;
-  pointer-events: none;
+  font-weight: 700;
+  font-family: 'Poppins';
 }
 
 main #section-seven .subscribe-input::placeholder {
@@ -893,18 +894,11 @@ footer #bottom-title span {
   margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
   gap: 10px;
 }
 
-.modal-body #date-options .date-option {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  max-height: 3rem;
-  border: 1px solid #3f96fc;
-  border-radius: 5px;
-  padding: 10px 10px;
+.modal-body #date-options .date-option>input {
+  width: 100%;
 }
 
 .modal-body #date-options .date-option p {
@@ -919,6 +913,7 @@ footer #bottom-title span {
 .modal-body #policy-and-terms .checkbox-container {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .modal-body #policy-and-terms .checkbox-label {
@@ -964,7 +959,7 @@ footer #bottom-title span {
 }
 
 .modal-body #policy-and-terms p {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   margin-left: 5px;
 }

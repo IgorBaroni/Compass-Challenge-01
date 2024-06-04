@@ -1,3 +1,7 @@
+// Regexs
+const validateEmail = /\w+@\w+\.\w+/;
+const validateValue = /\d+/;
+
 // Adoptables Page Route
 const viewAdoptablesButtons = document.querySelectorAll(".view-adop-btn");
 
@@ -9,9 +13,14 @@ viewAdoptablesButtons.forEach((button) => {
 
 // Success Page Route
 const subscribeButton = document.getElementById("subscribe-btn");
+const subscribeInput = document.getElementById("subscribe-email-input");
 
 subscribeButton.addEventListener("click", () => {
-  window.location = "src/view/success-page.html?action=subscription";
+  if (validateEmail.test(subscribeInput.value)) {
+    window.location = "src/view/success-page.html?action=subscription";
+  } else {
+    alert("Enter a valid email!");
+  }
 });
 
 // Carousel
@@ -140,16 +149,13 @@ valueInput.addEventListener("change", () => {
   valueInput.value = "R$ " + parseFloat(valueInput.value).toFixed(2);
 });
 
-const validateEmail = /\w+@\w+\.\w+/;
-const validateValue = /\d+/;
-
 document.getElementById("help-button").addEventListener("click", () => {
   if (
     validateValue.test(valueInput.value) &&
     validateEmail.test(emailInput.value)
   ) {
     window.location = "src/view/success-page.html?action=donation";
-  } else if (valueInput.value == "" && valueInput.value == "") {
+  } else if (validateEmail.value == "" && valueInput.value == "") {
     alert("Fill in all the blanks!");
   } else if (!validateValue.test(valueInput.value)) {
     alert("Fill in the value blank with a valid numeric value!");
@@ -184,6 +190,13 @@ const adoptModal = document.getElementById("adopt-modal");
 
 const adoptButtons = document.querySelectorAll(".apply-adopt-btn");
 
+const adoptemailInput = document.getElementById("adopt-email-input");
+const usernameInput = document.getElementById("user-name-input");
+const dayInput = document.getElementById("day-input");
+const monthInput = document.getElementById("month-input");
+const yearInput = document.getElementById("year-input");
+const policyCheckbox = document.getElementById("checkbox");
+
 adoptButtons.forEach((button) => {
   button.addEventListener("click", () => {
     adoptModal.showModal();
@@ -205,5 +218,20 @@ document.getElementById("adopt-cancel-button").addEventListener("click", () => {
 });
 
 document.getElementById("adopt-button").addEventListener("click", () => {
-  window.location = "src/view/success-page.html?action=adoption";
+  if (
+    validateEmail.test(adoptemailInput.value) &&
+    usernameInput.value.length > 10 &&
+    dayInput.value > 0 &&
+    monthInput.value > 0 &&
+    yearInput.value > 0 &&
+    policyCheckbox.checked
+  ) {
+    window.location = "src/view/success-page.html?action=adoption";
+  } else if (!policyCheckbox.checked) {
+    alert("You need to agree with our Privacy Policy and Terms of Conditions!");
+  } else if (dayInput.value > 31 || monthInput.value > 12 || (yearInput.value < 1800 && yearInput.value > 3000)) {
+    alert("You need to enter valid date values!");
+  } else {
+    alert("Fill in all the blanks with valid information!");
+  }
 });

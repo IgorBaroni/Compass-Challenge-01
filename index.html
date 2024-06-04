@@ -349,6 +349,7 @@
             type="text"
             class="subscribe-input"
             placeholder="Enter your email"
+            id="subscribe-email-input"
           />
           <button class="subscribe-btn" id="subscribe-btn">Subscribe</button>
         </div>
@@ -506,32 +507,19 @@
       <p>Complete the blanks with your information</p>
       <div class="modal-body">
         <label for="adopt-email">EMAIL<span>*</span></label>
-        <input
-          type="email"
-          name="adopt-email"
-          id="adopt-email-input"
-          value="youremail@here"
-        />
+        <input type="email" name="adopt-email" id="adopt-email-input" />
         <label for="value">FULL NAME<span>*</span></label>
-        <input
-          type="text"
-          name="adopt-user-fullname"
-          id="user-name-input"
-          value="Your name"
-        />
+        <input type="text" name="adopt-user-fullname" id="user-name-input" />
         <label for="value">DATE OF BIRTH<span>*</span></label>
         <div id="date-options">
-          <div class="date-option" id="day">
-            <p>Day</p>
-            <img src="/src/assets/images/buttons/down-arrow-icon.svg" />
+          <div class="date-option">
+            <input type="number" name="day-input" id="day-input" placeholder="Day" />
           </div>
-          <div class="date-option" id="month">
-            <p>Month</p>
-            <img src="/src/assets/images/buttons/down-arrow-icon.svg" />
+          <div class="date-option">
+            <input type="number" name="month-input" id="month-input" placeholder="Month" />
           </div>
-          <div class="date-option" id="year">
-            <p>Year</p>
-            <img src="/src/assets/images/buttons/down-arrow-icon.svg" />
+          <div class="date-option">
+            <input type="number" name="year-input" id="year-input" placeholder="Year" />
           </div>
         </div>
 
