@@ -554,7 +554,7 @@ main #section-seven .subscribe-input {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 main #section-seven .subscribe-input::placeholder {
@@ -894,7 +894,7 @@ footer #bottom-title span {
   gap: 10px;
 }
 
-.modal-body #date-options .date-option>input {
+.modal-body #date-options .date-option > input {
   width: 100%;
 }
 

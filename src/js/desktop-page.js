@@ -229,7 +229,11 @@ document.getElementById("adopt-button").addEventListener("click", () => {
     window.location = "src/view/success-page.html?action=adoption";
   } else if (!policyCheckbox.checked) {
     alert("You need to agree with our Privacy Policy and Terms of Conditions!");
-  } else if (dayInput.value > 31 || monthInput.value > 12 || (yearInput.value < 1800 && yearInput.value > 3000)) {
+  } else if (
+    dayInput.value > 31 ||
+    monthInput.value > 12 ||
+    (yearInput.value < 1800 && yearInput.value > 3000)
+  ) {
     alert("You need to enter valid date values!");
   } else {
     alert("Fill in all the blanks with valid information!");
