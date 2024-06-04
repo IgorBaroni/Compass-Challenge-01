@@ -29,15 +29,22 @@ valueInput.addEventListener("change", () => {
   valueInput.value = "R$ " + parseFloat(valueInput.value).toFixed(2);
 });
 
-const validateEmail = /\w+@\w+\.\w+/
-const validateValue = /\d+/
+const validateEmail = /\w+@\w+\.\w+/;
+const validateValue = /\d+/;
 
 document.getElementById("help-button").addEventListener("click", () => {
-  if (validateValue.test(valueInput.value) && validateEmail.test(emailInput.value)) {
+  if (
+    validateValue.test(valueInput.value) &&
+    validateEmail.test(emailInput.value)
+  ) {
     window.location = "success-page.html?action=donation";
-  } else {
-    alert("Fill in all the blanks with valid information!");
-  } 
+  } else if (valueInput.value == "" && valueInput.value == "") {
+    alert("Fill in all the blanks!");
+  } else if (!validateValue.test(valueInput.value)) {
+    alert("Fill in the value blank with a valid numeric value!");
+  } else if (!validateEmail.test(valueInput.value)) {
+    alert("Fill in the email blank with a valid email!");
+  }
 });
 
 const paymentMethods = document.querySelectorAll(".payment-method");
