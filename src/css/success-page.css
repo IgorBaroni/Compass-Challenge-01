@@ -30,7 +30,6 @@ nav #left-options {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  /* flex-flow: row wrap; */
 }
 
 nav #right-options {
@@ -39,7 +38,6 @@ nav #right-options {
   align-items: center;
   margin-right: -8px;
   gap: 20px;
-  /* flex-flow: row wrap; */
 }
 
 #row-container {
@@ -262,7 +260,7 @@ main p {
 }
 
 #donate-modal #payment-methods .radio-button::after {
-  content: "\2714"; /* Código unicode do símbolo de correto (✓) */
+  content: "\2714"; /* Unicode code of check mark symbol (✓)  */
   font-size: 12px;
   font-weight: lighter;
   color: white;
